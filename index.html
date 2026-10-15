@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f0e9" />
+    <meta name="description" content="把四六级词汇藏进爽文剧情里：追一幕、点一词、做一次轻复盘。" />
+    <title>词境追踪局 · 1,024 词剧情记忆</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="词境追踪局首页">
+        <span class="brand-mark">词</span>
+        <span>词境追踪局</span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#library">剧情词库 <span class="nav-count">08</span></a>
+        <a href="#method">怎么背</a>
+        <a href="#review">今日复盘</a>
+      </nav>
+      <button class="text-button" id="clearProgress" type="button">清空进度</button>
+    </header>
+
+    <main id="top">
+      <section class="hero shell" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> CET VOCABULARY · CASE 01 已解锁</p>
+          <h1 id="heroTitle">四六级单词，<br /><em>写进每一场</em><br />反转。</h1>
+          <p class="hero-intro">把 1,024 个高频词藏进 8 个原创剧情。每次追一幕、点一条线索，再用轻复盘把词义锁进记忆。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#library" id="startStory">开始追剧情 <span>↗</span></a>
+            <button class="button button-quiet" type="button" id="warmup">先来一道热身题 <span>→</span></button>
+          </div>
+          <div class="hero-stats" aria-label="产品数据">
+            <div><strong>08</strong><span>个剧情篇章</span></div>
+            <div><strong>64</strong><span>个首发词条</span></div>
+            <div><strong>03</strong><span>步记忆闭环</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="词境追踪局产品卡片">
+          <div class="floating-note note-yellow">词汇不再孤立</div>
+          <div class="floating-note note-blue">看剧情<br />记住语境</div>
+          <div class="case-card">
+            <div class="case-card-top"><span>CET 01</span><span>词境追踪局</span></div>
+            <div class="case-card-lines"></div>
+            <p class="case-card-kicker">THE FIRST CLUE</p>
+            <h2>词汇<br /><span>藏在剧情里。</span></h2>
+            <div class="case-card-arrow">↗</div>
+            <div class="case-card-foot"><span>64 WORDS</span><span>点进线索 →</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="library" aria-labelledby="libraryTitle">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">01 剧情词库</p>
+            <h2 id="libraryTitle">1,024 个词，<br /><span>全部写进剧情。</span></h2>
+          </div>
+          <p class="section-note">不是把单词摊成词表，而是拆成 8 个主题篇章。每个词都会在剧情段落里出现，点击线索就能看到词义、例句和记忆钩子。</p>
+        </div>
+        <div class="library-tools">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜主题、剧情标题或单词" /></label>
+          <label class="select-box"><span>主题</span><select id="topicFilter"><option value="all">全部篇章</option><option value="city">城市与社会</option><option value="science">科技与自然</option><option value="people">人物与选择</option><option value="daily">生活与远方</option></select></label>
+          <label class="select-box"><span>排序</span><select id="sortSelect"><option value="story">剧情顺序</option><option value="progress">已点亮优先</option><option value="words">词条数量</option></select></label>
+        </div>
+        <div class="library-meta"><span id="libraryMeta">08 个剧情篇章 · 64 个词</span><span><b id="totalLearned">0</b> 个词已点亮 · 点进篇章开始追</span></div>
+        <div class="chapter-list" id="chapterList"></div>
+      </section>
+
+      <section class="method-section shell" id="method" aria-labelledby="methodTitle">
+        <div class="section-heading compact">
+          <div><p class="section-kicker">02 无痛方法</p><h2 id="methodTitle">三步，把“背过”<br /><span>变成“用过”。</span></h2></div>
+        </div>
+        <div class="method-grid">
+          <article class="method-card"><span class="method-number">01 ◌</span><h3>先追剧情</h3><p>先别查词。让上下文给你一个模糊但真实的第一印象，先知道它在故事里扮演什么角色。</p></article>
+          <article class="method-card method-card-accent"><span class="method-number">02 ✦</span><h3>点亮线索</h3><p>点击高亮词，查看词义、例句和“爽文记忆钩子”。理解发生在你刚刚看到它的那一秒。</p></article>
+          <article class="method-card"><span class="method-number">03 ↗</span><h3>马上复盘</h3><p>用 3 道小题把刚刚看过的词，再从脑海里叫回来。能想起来，才算真正见过。</p></article>
+        </div>
+      </section>
+
+      <section class="review-section shell" id="review" aria-labelledby="reviewTitle">
+        <div class="review-header"><div><p class="section-kicker">03 今日复盘</p><h2 id="reviewTitle">最后一页，<br /><span>把记忆锁上。</span></h2></div><p>追完任意一幕，来做 3 道轻量复盘。故事里点亮过的词会进入你的本地进度，下一次打开还能接着追。</p></div>
+        <div class="review-panel" id="reviewPanel"></div>
+      </section>
+    </main>
+
+    <div class="reader-overlay" id="readerOverlay" hidden>
+      <div class="reader-shell" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+        <button class="close-reader" id="closeReader" type="button" aria-label="关闭剧情阅读">×</button>
+        <div class="reader-topline"><span id="readerKicker">CASE 01 · CITY AFTER RAIN</span><span id="readerProgress">SCENE 01 / 03</span></div>
+        <div class="reader-layout">
+          <aside class="scene-rail"><div class="rail-title">剧情场次</div><div class="scene-buttons" id="sceneButtons"></div><div class="rail-progress"><span id="railProgressFill"></span></div><small id="railProgressText">0 / 8 词已点亮</small></aside>
+          <article class="reader-content">
+            <p class="story-label">STORY CLUE</p>
+            <h2 id="readerTitle">她以为只是一场雨。</h2>
+            <p class="story-summary" id="readerSummary"></p>
+            <div class="story-body" id="storyBody"></div>
+            <div class="twist-box" id="twistBox"></div>
+            <div class="word-file" id="wordFile"></div>
+            <div class="reader-nav"><button class="button button-quiet" id="prevScene" type="button">← 上一幕</button><button class="button button-primary" id="nextScene" type="button">下一幕 →</button></div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="word-modal" id="wordModal" hidden>
+      <div class="modal-backdrop" data-close-word></div>
+      <article class="word-sheet" role="dialog" aria-modal="true" aria-labelledby="wordTitle">
+        <button class="close-sheet" data-close-word type="button" aria-label="关闭词汇档案">×</button>
+        <p class="section-kicker" id="wordCategory">WORD FILE</p>
+        <h2 id="wordTitle">threshold</h2>
+        <p class="word-phonetic" id="wordPhonetic">/ˈθreʃhəʊld/ · n.</p>
+        <p class="word-meaning" id="wordMeaning"></p>
+        <div class="hook-card"><span>爽文记忆钩子</span><p id="wordHook"></p></div>
+        <div class="example-card"><span>剧情里的英文</span><p id="wordExample"></p></div>
+        <button class="button button-primary full-button" id="learnButton" type="button">已点亮 · 再看一眼</button>
+      </article>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
