@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f4f0e9" />
-    <meta name="description" content="把四六级词汇藏进爽文剧情里：追一幕、点一词、做一次轻复盘。" />
-    <title>词境追踪局 · 1,024 词剧情记忆</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="把雅思词汇藏进原创剧情里：追一幕、点一词、做一次轻复盘。" />
+    <title>雅思词境追踪局 · IELTS Vocabulary Story Lab</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -26,9 +27,9 @@
     <main id="top">
       <section class="hero shell" aria-labelledby="heroTitle">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> CET VOCABULARY · CASE 01 已解锁</p>
-          <h1 id="heroTitle">四六级单词，<br /><em>写进每一场</em><br />反转。</h1>
-          <p class="hero-intro">把 1,024 个高频词藏进 8 个原创剧情。每次追一幕、点一条线索，再用轻复盘把词义锁进记忆。</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> IELTS VOCABULARY · CASE 01 已解锁</p>
+          <h1 id="heroTitle">雅思单词，<br /><em>写进每一场</em><br />反转。</h1>
+          <p class="hero-intro">把 64 个首发雅思词藏进 8 个原创剧情。每次追一幕、点一条线索，再用轻复盘把词义锁进语境。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#library" id="startStory">开始追剧情 <span>↗</span></a>
             <button class="button button-quiet" type="button" id="warmup">先来一道热身题 <span>→</span></button>
@@ -43,12 +44,12 @@
           <div class="floating-note note-yellow">词汇不再孤立</div>
           <div class="floating-note note-blue">看剧情<br />记住语境</div>
           <div class="case-card">
-            <div class="case-card-top"><span>CET 01</span><span>词境追踪局</span></div>
+            <div class="case-card-top"><span>IELTS 01</span><span>雅思词境追踪局</span></div>
             <div class="case-card-lines"></div>
             <p class="case-card-kicker">THE FIRST CLUE</p>
             <h2>词汇<br /><span>藏在剧情里。</span></h2>
             <div class="case-card-arrow">↗</div>
-            <div class="case-card-foot"><span>64 WORDS</span><span>点进线索 →</span></div>
+            <div class="case-card-foot"><span>64 IELTS WORDS</span><span>点进线索 →</span></div>
           </div>
         </div>
       </section>
@@ -57,16 +58,16 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">01 剧情词库</p>
-            <h2 id="libraryTitle">1,024 个词，<br /><span>全部写进剧情。</span></h2>
+            <h2 id="libraryTitle">64 个雅思词，<br /><span>首发全部写进剧情。</span></h2>
           </div>
-          <p class="section-note">不是把单词摊成词表，而是拆成 8 个主题篇章。每个词都会在剧情段落里出现，点击线索就能看到词义、例句和记忆钩子。</p>
+          <p class="section-note">不是把雅思单词摊成词表，而是拆成 8 个主题篇章。每个词都会在英文剧情里出现，点击线索就能看到释义、搭配、考试场景和记忆钩子。</p>
         </div>
         <div class="library-tools">
           <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜主题、剧情标题或单词" /></label>
-          <label class="select-box"><span>主题</span><select id="topicFilter"><option value="all">全部篇章</option><option value="city">城市与社会</option><option value="science">科技与自然</option><option value="people">人物与选择</option><option value="daily">生活与远方</option></select></label>
+          <label class="select-box"><span>主题</span><select id="topicFilter"><option value="all">全部篇章</option><option value="campus">校园与学习</option><option value="work">职场与社会</option><option value="environment">环境与科学</option><option value="travel">旅行与城市</option><option value="health">健康与生活</option><option value="technology">科技与未来</option><option value="society">沟通与社会</option><option value="culture">文化与研究</option></select></label>
           <label class="select-box"><span>排序</span><select id="sortSelect"><option value="story">剧情顺序</option><option value="progress">已点亮优先</option><option value="words">词条数量</option></select></label>
         </div>
-        <div class="library-meta"><span id="libraryMeta">08 个剧情篇章 · 64 个词</span><span><b id="totalLearned">0</b> 个词已点亮 · 点进篇章开始追</span></div>
+        <div class="library-meta"><span id="libraryMeta">08 个剧情篇章 · 64 个雅思词</span><span><b id="totalLearned">0</b> 个雅思词已点亮 · 点进篇章开始追</span></div>
         <div class="chapter-list" id="chapterList"></div>
       </section>
 
@@ -75,14 +76,14 @@
           <div><p class="section-kicker">02 无痛方法</p><h2 id="methodTitle">三步，把“背过”<br /><span>变成“用过”。</span></h2></div>
         </div>
         <div class="method-grid">
-          <article class="method-card"><span class="method-number">01 ◌</span><h3>先追剧情</h3><p>先别查词。让上下文给你一个模糊但真实的第一印象，先知道它在故事里扮演什么角色。</p></article>
-          <article class="method-card method-card-accent"><span class="method-number">02 ✦</span><h3>点亮线索</h3><p>点击高亮词，查看词义、例句和“爽文记忆钩子”。理解发生在你刚刚看到它的那一秒。</p></article>
-          <article class="method-card"><span class="method-number">03 ↗</span><h3>马上复盘</h3><p>用 3 道小题把刚刚看过的词，再从脑海里叫回来。能想起来，才算真正见过。</p></article>
+          <article class="method-card"><span class="method-number">01 ◌</span><h3>先追英文剧情</h3><p>先别查词。让上下文给你一个模糊但真实的第一印象，先知道雅思词汇在故事里扮演什么角色。</p></article>
+          <article class="method-card method-card-accent"><span class="method-number">02 ✦</span><h3>点亮雅思线索</h3><p>点击高亮词，查看释义、常见搭配、考试场景和“爽文记忆钩子”。理解发生在你刚刚看到它的那一秒。</p></article>
+          <article class="method-card"><span class="method-number">03 ↗</span><h3>马上做复盘</h3><p>用 3 道雅思语境小题把刚刚看过的词，再从脑海里叫回来。能想起来，才算真正见过。</p></article>
         </div>
       </section>
 
       <section class="review-section shell" id="review" aria-labelledby="reviewTitle">
-        <div class="review-header"><div><p class="section-kicker">03 今日复盘</p><h2 id="reviewTitle">最后一页，<br /><span>把记忆锁上。</span></h2></div><p>追完任意一幕，来做 3 道轻量复盘。故事里点亮过的词会进入你的本地进度，下一次打开还能接着追。</p></div>
+        <div class="review-header"><div><p class="section-kicker">03 今日雅思复盘</p><h2 id="reviewTitle">最后一页，<br /><span>把词义锁上。</span></h2></div><p>追完任意一幕，来做 3 道轻量雅思复盘。故事里点亮过的词会进入你的本地进度，下一次打开还能接着追。</p></div>
         <div class="review-panel" id="reviewPanel"></div>
       </section>
     </main>
@@ -90,12 +91,12 @@
     <div class="reader-overlay" id="readerOverlay" hidden>
       <div class="reader-shell" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
         <button class="close-reader" id="closeReader" type="button" aria-label="关闭剧情阅读">×</button>
-        <div class="reader-topline"><span id="readerKicker">CASE 01 · CITY AFTER RAIN</span><span id="readerProgress">SCENE 01 / 03</span></div>
+        <div class="reader-topline"><span id="readerKicker">IELTS CASE 01 · THE MISSING SYLLABUS</span><span id="readerProgress">SCENE 01 / 03</span></div>
         <div class="reader-layout">
           <aside class="scene-rail"><div class="rail-title">剧情场次</div><div class="scene-buttons" id="sceneButtons"></div><div class="rail-progress"><span id="railProgressFill"></span></div><small id="railProgressText">0 / 8 词已点亮</small></aside>
           <article class="reader-content">
             <p class="story-label">STORY CLUE</p>
-            <h2 id="readerTitle">她以为只是一场雨。</h2>
+            <h2 id="readerTitle">The room that was not booked.</h2>
             <p class="story-summary" id="readerSummary"></p>
             <div class="story-body" id="storyBody"></div>
             <div class="twist-box" id="twistBox"></div>
@@ -114,8 +115,9 @@
         <h2 id="wordTitle">threshold</h2>
         <p class="word-phonetic" id="wordPhonetic">/ˈθreʃhəʊld/ · n.</p>
         <p class="word-meaning" id="wordMeaning"></p>
+        <div class="word-details"><div><span>雅思考试场景</span><strong id="wordSkill"></strong></div><div><span>常见搭配</span><strong id="wordCollocation"></strong></div></div>
         <div class="hook-card"><span>爽文记忆钩子</span><p id="wordHook"></p></div>
-        <div class="example-card"><span>剧情里的英文</span><p id="wordExample"></p></div>
+        <div class="example-card"><span>雅思语境例句</span><p id="wordExample"></p></div>
         <button class="button button-primary full-button" id="learnButton" type="button">已点亮 · 再看一眼</button>
       </article>
     </div>
